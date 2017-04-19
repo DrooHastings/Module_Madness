@@ -4,7 +4,7 @@ var random = require ('./random');
 
 
 function convertNumber (){
-  number=random().toFixed(2);
+  number=random(100, 1000000).toFixed(2);
   number=parseFloat(number).toLocaleString();
   return number;
 }
